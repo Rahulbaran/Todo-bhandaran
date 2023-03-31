@@ -1,0 +1,66 @@
+{
+  "name": "todo-bhandaran",
+  "private": false,
+  "type": "module",
+  "author": {
+    "name": "Rahul Kumar",
+    "email": "rahulkumar109422@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": [],
+  "description": "",
+  "scripts": {
+    "start": "vite serve",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "prettier": {
+    "arrowParens": "avoid",
+    "useTabs": false,
+    "singleQuote": false,
+    "jsxSingleQuote": false,
+    "endOfLine": "auto",
+    "semi": true,
+    "trailingComma": "none"
+  },
+  "browserslist": {
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ],
+    "production": [
+      ">0.25%",
+      "not dead",
+      "not op_mini all",
+      "not IE 11"
+    ]
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.13.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.10.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-legacy": "^4.0.2",
+    "@vitejs/plugin-react": "^3.1.0",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.37.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "postcss-preset-env": "^8.2.0",
+    "prettier": "^2.8.7",
+    "sass": "^1.60.0",
+    "stylelint": "^15.3.0",
+    "stylelint-config-standard-scss": "^7.0.1",
+    "stylelint-order": "^6.0.3",
+    "terser": "^5.16.8",
+    "vite": "^4.2.0"
+  }
+}

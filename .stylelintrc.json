@@ -1,0 +1,26 @@
+{
+  "extends": ["stylelint-config-standard-scss"],
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "color-named": null,
+    "selector-class-pattern": null,
+    "declaration-empty-line-before": null,
+    "custom-property-empty-line-before": null,
+    "hue-degree-notation": null,
+    "color-no-hex": true,
+    "declaration-no-important": true,
+    "block-no-empty": true,
+    "comment-no-empty": true,
+    "order/properties-alphabetical-order": true,
+    "declaration-block-no-duplicate-custom-properties": true,
+    "alpha-value-notation": "number",
+    "function-name-case": "lower",
+    "value-keyword-case": "lower",
+    "declaration-colon-space-after": "always",
+    "unit-allowed-list": ["em", "rem", "px", "vw", "vh", "%", "fr", "ms", "s"],
+    "max-nesting-depth": 2,
+    "order/order": ["custom-properties", "declarations"],
+    "order/properties-order": ["width", "inline-size", "height", "block-size"]
+  },
+  "ignoreFiles": ["dist/**/*.css", "node_modules/**/*.{scss,css}"]
+}
