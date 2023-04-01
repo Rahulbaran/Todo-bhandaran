@@ -1,0 +1,17 @@
+.dark-theme {
+  /* App Colors */
+  --app-bg: var(--darkest);
+  --heading-color: var(--lightest);
+  --link-color: var(--lightest);
+  --text-color: var(--light);
+  --card-bg: var(--dark);
+  --material-icon-bg: var(--darkest);
+  --header-bg: var(--dark);
+  --mode-btn-bg: var(--darkest);
+
+  /* Form Colors */
+  --form-bg: var(--dark);
+  --form-text-color: var(--light);
+  --input-bg: var(--dark);
+  --input-border-color: var(--mid);
+}

@@ -23,6 +23,10 @@
     padding: var(--base-padding);
     position: relative;
 
+    &.dark-active-btn::after {
+      left: 3.1em;
+    }
+
     &::after {
       aspect-ratio: 1;
       background-color: var(--mode-btn-top-bg);
@@ -32,6 +36,7 @@
       left: 0.25em;
       position: absolute;
       top: calc(var(--base-margin) * 0.65);
+      transition: left 300ms ease-out;
     }
 
     &:hover {

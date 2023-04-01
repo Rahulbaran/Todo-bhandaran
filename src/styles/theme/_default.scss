@@ -1,0 +1,26 @@
+.default-theme {
+  /* App Colors */
+  --app-bg: var(--light);
+  --heading-color: var(--darkest);
+  --link-color: var(--darkest);
+  --text-color: var(--dark);
+  --card-bg: var(--lightest);
+  --material-icon-bg: var(--light);
+  --header-bg: var(--lightest);
+  --mode-btn-bg: var(--light);
+  --mode-btn-top-bg: var(--dark);
+  --mode-btn-icon: var(--brand);
+
+  /* Form Colors */
+  --form-bg: var(--lightest);
+  --form-text-color: var(--dark);
+  --input-bg: var(--lightest);
+  --input-border-color: var(--light);
+  --error-text-color: var(--brand);
+
+  /* Buttons */
+  --primary-btn-bg: var(--brand);
+  --primary-btn-text-color: var(--darkest);
+  --secondary-btn-bg: var(--mid);
+  --secondary-btn-text-color: var(--darkest);
+}
