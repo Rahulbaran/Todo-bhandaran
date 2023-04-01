@@ -37,7 +37,13 @@
     span {
       background-color: var(--material-icon-bg);
       border-radius: 50%;
+      opacity: 0.6;
       padding: calc(var(--base-padding) * 0.65);
+      transition: opacity 200ms ease;
+    }
+
+    span:hover {
+      opacity: 1;
     }
   }
 }

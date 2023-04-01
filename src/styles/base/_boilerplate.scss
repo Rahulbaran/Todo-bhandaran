@@ -1,6 +1,22 @@
 html {
   box-sizing: border-box;
   font-size: 75%;
+
+  @media screen and (width > 30em) {
+    font-size: 87.5%;
+  }
+
+  @media screen and (width > 48em) {
+    font-size: 100%;
+  }
+
+  @media screen and (width > 62em) {
+    font-size: 112.5%;
+  }
+
+  @media screen and (width > 79.9375em) {
+    font-size: 125%;
+  }
 }
 
 * {

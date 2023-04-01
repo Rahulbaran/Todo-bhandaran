@@ -1,0 +1,45 @@
+.header {
+  align-items: center;
+  background-color: var(--header-bg);
+  display: flex;
+  justify-content: center;
+  padding: calc(var(--base-padding) * 2);
+  position: relative;
+}
+
+/* Dark Mode Container Styling */
+.mode-container {
+  inset-inline-end: calc(var(--base-margin) * 3);
+  position: absolute;
+
+  .dark-mode-btn {
+    background-color: var(--mode-btn-bg);
+    border: 0;
+    border-radius: var(--base-br);
+    box-shadow: 0 0 5px hwb(var(--shadow) / 0.15);
+    display: flex;
+    gap: calc(var(--base-gap) * 2);
+    justify-content: space-between;
+    padding: var(--base-padding);
+    position: relative;
+
+    &::after {
+      aspect-ratio: 1;
+      background-color: var(--mode-btn-top-bg);
+      border-radius: 50%;
+      content: "";
+      inline-size: 2.15em;
+      left: 0.25em;
+      position: absolute;
+      top: calc(var(--base-margin) * 0.65);
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    span {
+      color: var(--mode-btn-icon);
+    }
+  }
+}
