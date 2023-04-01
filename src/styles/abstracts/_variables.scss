@@ -1,0 +1,34 @@
+:root {
+  --base-fs: 1rem;
+  --base-padding: 0.5em;
+  --base-margin: 0.5em;
+  --base-gap: 0.5em;
+  --base-br: 20px;
+  --base-lh: 1.5;
+
+  /* Font Weights */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi: 600;
+  --fw-bold: 700;
+
+  /* Font Stacks */
+  --fs-montserrat: "Montserrat", serif;
+
+  /* Color Pallete */
+  --brand: hwb(330 28% 7%);
+  --darkest: hwb(336 9% 85%);
+  --dark: hwb(336 24% 62%);
+  --mid: hwb(326 51% 33%);
+  --light: hwb(240 83% 15%);
+  --lightest: hwb(0 100% 0%);
+  --shadow: 0 0% 100%;
+
+  /* App Colors */
+  --app-bg: var(--light);
+  --heading-color: var(--darkest);
+  --link-color: var(--darkest);
+  --text-color: var(--dark);
+  --card-bg: var(--lightest);
+  --material-icon-bg: var(--light);
+}

@@ -1,0 +1,33 @@
+:where(h1, h2, h3, h4, h5, h6, legend) {
+  color: var(--heading-color);
+  font-weight: var(--fw-bold);
+
+  &:not(h5, h6) {
+    line-height: calc(var(--base-lh) / 1.5);
+  }
+}
+
+:where(p, span, li, label, a, big) {
+  color: var(--link-color);
+  font-size: calc(var(--base-fs) * 1.1);
+
+  &:not(a) {
+    color: var(--text-color);
+  }
+}
+
+a,
+span {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+audio,
+video,
+iframe {
+  display: block;
+}

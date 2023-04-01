@@ -1,0 +1,32 @@
+html {
+  box-sizing: border-box;
+  font-size: 75%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  &,
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  font-family: var(--fs-montserrat);
+  font-size: var(--base-fs);
+  font-weight: var(--fw-regular);
+  line-height: var(--base-lh);
+}
+
+.app-wrapper {
+  background-color: var(--app-bg);
+  min-block-size: 100vh;
+}

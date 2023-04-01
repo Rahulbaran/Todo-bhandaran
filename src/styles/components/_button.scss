@@ -1,0 +1,12 @@
+.btn {
+  background-color: var(--btn-bg);
+  border: 0;
+  border-radius: calc(var(--base-br) * 0.2);
+  color: var(--btn-text-color);
+  font-family: inherit;
+  font-size: calc(var(--base-fs) * 1.1);
+
+  &:hover {
+    cursor: pointer;
+  }
+}

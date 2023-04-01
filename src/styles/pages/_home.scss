@@ -1,0 +1,43 @@
+.home-wrapper {
+  padding: calc(var(--base-padding) * 4) calc(var(--base-padding) * 3);
+
+  .todo-cards {
+    display: grid;
+    gap: calc(var(--base-gap) * 3);
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .todo-card {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--base-gap) * 2);
+    justify-content: space-between;
+
+    h2 {
+      margin-block-end: var(--base-margin);
+    }
+
+    p {
+      font-weight: var(--fw-medium);
+    }
+  }
+
+  .todo-buttons {
+    align-items: flex-end;
+    display: flex;
+    gap: calc(var(--base-gap) * 1.5);
+    justify-content: flex-end;
+
+    button {
+      border: 0;
+      cursor: pointer;
+    }
+
+    span {
+      background-color: var(--material-icon-bg);
+      border-radius: 50%;
+      padding: calc(var(--base-padding) * 0.65);
+    }
+  }
+}
