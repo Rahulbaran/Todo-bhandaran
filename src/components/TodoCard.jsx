@@ -9,7 +9,7 @@ export default function TodoCard({ todo }) {
       </div>
 
       <div className="todo-buttons">
-        <Link to={`/update/${todo.id}`} title="update todo">
+        <Link to={`/update/${todo.id}`} title="edit todo">
           <span className="material-icons">edit</span>
         </Link>
 
