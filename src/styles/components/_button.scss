@@ -1,12 +1,21 @@
 .btn {
   background-color: var(--btn-bg);
   border: 0;
-  border-radius: calc(var(--base-br) * 0.2);
+  border-radius: calc(var(--base-br) * 0.15);
   color: var(--btn-text-color);
   font-family: inherit;
   font-size: calc(var(--base-fs) * 1.1);
+  font-weight: var(--fw-medium);
+  padding: calc(var(--base-padding) * 1.25);
+  transition: filter 250ms ease;
 
   &:hover {
     cursor: pointer;
+    filter: opacity(0.75);
+  }
+
+  &-primary {
+    --btn-bg: var(--primary-btn-bg);
+    --btn-text-color: var(--primary-btn-text-color);
   }
 }

@@ -7,7 +7,7 @@
   }
 }
 
-:where(p, span, li, label, a, big) {
+:where(p, span, li, label, a, big, input, textarea) {
   color: var(--link-color);
   font-size: calc(var(--base-fs) * 1.1);
 
