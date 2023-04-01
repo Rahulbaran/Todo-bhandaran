@@ -12,7 +12,9 @@
   "scripts": {
     "start": "vite serve",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint src/**/**/*.{jsx,js} && stylelint src/**/**/*.{scss,css}",
+    "lint:fix": "eslint --fix src/**/**/*.{jsx,js} && stylelint --fix src/**/**/*.{scss,css}"
   },
   "prettier": {
     "arrowParens": "avoid",
