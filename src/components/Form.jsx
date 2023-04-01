@@ -1,6 +1,16 @@
-export default function Form({ submitLabel }) {
+export default function Form({
+  submitLabel,
+  todo,
+  handleChange,
+  handleSubmit
+}) {
   return (
-    <form spellCheck="false" autoComplete="off" className="form">
+    <form
+      spellCheck="false"
+      autoComplete="off"
+      className="form"
+      onSubmit={handleSubmit}
+    >
       <div className="form-group">
         <label htmlFor="title">Title</label>
         <input
@@ -9,6 +19,8 @@ export default function Form({ submitLabel }) {
           id="title"
           placeholder="todo title"
           required
+          value={todo.title}
+          onChange={e => handleChange(e, "title")}
         />
       </div>
       <div className="form-group">
@@ -20,6 +32,8 @@ export default function Form({ submitLabel }) {
           rows="5"
           required
           placeholder="todo content"
+          value={todo.content}
+          onChange={e => handleChange(e, "content")}
         />
       </div>
 

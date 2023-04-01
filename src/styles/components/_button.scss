@@ -2,11 +2,12 @@
   background-color: var(--btn-bg);
   border: 0;
   border-radius: calc(var(--base-br) * 0.15);
+  box-shadow: 0 3px 5px hwb(var(--shadow) / 0.15);
   color: var(--btn-text-color);
   font-family: inherit;
   font-size: calc(var(--base-fs) * 1.1);
   font-weight: var(--fw-medium);
-  padding: calc(var(--base-padding) * 1.25);
+  padding: calc(var(--base-padding) * 1.1) calc(var(--base-padding) * 1.25);
   transition: filter 250ms ease;
 
   &:hover {
@@ -17,5 +18,10 @@
   &-primary {
     --btn-bg: var(--primary-btn-bg);
     --btn-text-color: var(--primary-btn-text-color);
+  }
+
+  &-secondary {
+    --btn-bg: var(--secondary-btn-bg);
+    --btn-text-color: var(--secondary-btn-text-color);
   }
 }
