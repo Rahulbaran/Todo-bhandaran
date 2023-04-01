@@ -1,0 +1,12 @@
+.create-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--base-gap) * 3);
+  margin-block-start: calc(var(--base-margin) * 4);
+
+  h1 {
+    text-decoration: underline 0.2rem solid currentcolor;
+    text-underline-offset: 2px;
+  }
+}
