@@ -13,7 +13,7 @@
   --fw-bold: 700;
 
   /* Font Stacks */
-  --fs-montserrat: "Montserrat", serif;
+  --fs-poppins: "Poppins", serif;
 
   /* Color Pallete */
   --brand: hwb(330 28% 7%);
@@ -39,8 +39,11 @@
   /* Form Colors */
   --form-bg: var(--lightest);
   --input-border-color: var(--light);
+  --error-text-color: var(--brand);
 
   /* Buttons */
   --primary-btn-bg: var(--brand);
   --primary-btn-text-color: var(--darkest);
+  --secondary-btn-bg: var(--mid);
+  --secondary-btn-text-color: var(--darkest);
 }
