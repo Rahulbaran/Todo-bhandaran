@@ -30,7 +30,26 @@ export default function Home() {
         <h1>{todos.fetchError}</h1>
       ) : (
         <main className="todos-container">
-          <div className="filter-buttons"></div>
+          <div className="filter-buttons">
+            <button
+              className="btn btn-primary title-filter-btn"
+              title="filter todos titlewise"
+            >
+              Title
+            </button>
+            <button
+              className="btn btn-primary content-filter-btn"
+              title="filter todos contentwise"
+            >
+              Content
+            </button>
+            <button
+              className="btn btn-primary create-filter-btn"
+              title="filter todos based on created date"
+            >
+              Created_at
+            </button>
+          </div>
 
           <div className="todo-cards">
             {todos.todosData.length > 0 &&

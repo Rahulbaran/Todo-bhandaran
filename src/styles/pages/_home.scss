@@ -1,11 +1,17 @@
 .home-wrapper {
-  padding: calc(var(--base-padding) * 4) calc(var(--base-padding) * 3);
+  padding: calc(var(--base-padding) * 3) calc(var(--base-padding) * 3);
+
+  .filter-buttons {
+    display: flex;
+    gap: 0 var(--base-gap);
+    margin-bottom: var(--base-margin);
+  }
 
   .todo-cards {
     display: grid;
-    gap: calc(var(--base-gap) * 3);
+    gap: calc(var(--base-gap) * 2);
     grid-auto-rows: auto;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
 
   .todo-card {
@@ -15,11 +21,8 @@
     justify-content: space-between;
 
     h2 {
+      font-size: calc(var(--base-fs) * 1.4);
       margin-block-end: var(--base-margin);
-    }
-
-    p {
-      font-weight: var(--fw-medium);
     }
   }
 
@@ -30,6 +33,7 @@
     justify-content: flex-end;
 
     button {
+      background-color: transparent;
       border: 0;
       cursor: pointer;
     }
