@@ -5,7 +5,7 @@ import {
   Route
 } from "react-router-dom";
 
-/* layouts */
+/* Layouts */
 import RootLayout from "./layouts/RootLayout";
 
 /* Pages */
