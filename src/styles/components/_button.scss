@@ -24,4 +24,13 @@
     --btn-bg: var(--secondary-btn-bg);
     --btn-text-color: var(--secondary-btn-text-color);
   }
+
+  &-deactivate {
+    opacity: 0.5;
+
+    &:hover {
+      cursor: none;
+      filter: opacity(1);
+    }
+  }
 }

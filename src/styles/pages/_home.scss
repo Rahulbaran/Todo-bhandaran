@@ -51,3 +51,19 @@
     }
   }
 }
+
+/* Pagination Container Styling */
+.pagination-container {
+  margin-block-start: calc(var(--base-margin) * 4);
+
+  ul {
+    display: flex;
+    gap: calc(var(--base-gap) * 2);
+    justify-content: center;
+    list-style-type: none;
+  }
+
+  .pagination-btn {
+    inline-size: 2.5em;
+  }
+}
