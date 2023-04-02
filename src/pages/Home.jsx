@@ -41,6 +41,16 @@ export default function Home() {
     sortTodos();
   }, [sortBy]);
 
+  /* Delete Todo */
+  const handleDelete = id => {
+    setTodos(prev => {
+      return {
+        ...prev,
+        todosData: prev.todosData.filter(todo => todo.id !== id)
+      };
+    });
+  };
+
   return (
     <div className="home-wrapper">
       {todos.fetchError ? (
@@ -74,7 +84,7 @@ export default function Home() {
           <div className="todo-cards">
             {todos.todosData.length > 0 &&
               todos.todosData.map(todo => (
-                <TodoCard key={todo.id} todo={todo} />
+                <TodoCard key={todo.id} todo={todo} onDelete={handleDelete} />
               ))}
           </div>
         </main>

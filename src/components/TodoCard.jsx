@@ -1,6 +1,20 @@
 import { Link } from "react-router-dom";
 
-export default function TodoCard({ todo }) {
+import { supabase } from "../config/supabaseClient";
+
+export default function TodoCard({ todo, onDelete }) {
+  const handleDelete = async () => {
+    const { data, error } = await supabase
+      .from("items")
+      .delete()
+      .eq("id", todo.id)
+      .select();
+
+    // eslint-disable-next-line no-console
+    if (error) console.error(error);
+    if (data) onDelete(todo.id);
+  };
+
   return (
     <div className="card todo-card">
       <div className="todo-content">
@@ -13,7 +27,7 @@ export default function TodoCard({ todo }) {
           <span className="material-icons">edit</span>
         </Link>
 
-        <button title="delete todo">
+        <button title="delete todo" onClick={handleDelete}>
           <span className="material-icons">delete</span>
         </button>
       </div>
