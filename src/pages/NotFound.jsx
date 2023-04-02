@@ -4,8 +4,14 @@ export default function NotFound() {
   const navigate = useNavigate();
   return (
     <div className="error-wrapper">
-      <h1>Sorry, Page is under construction</h1>
-      <button onClick={() => navigate(-1)}>Go Back</button>
+      <h1>404! </h1>
+      <button
+        className="btn btn-secondary"
+        onClick={() => navigate(-1)}
+        title="Home"
+      >
+        Go Back 😥
+      </button>
     </div>
   );
 }

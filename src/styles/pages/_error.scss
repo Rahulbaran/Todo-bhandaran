@@ -1,0 +1,13 @@
+.error-wrapper {
+  align-content: center;
+  block-size: calc(100vh - 4em);
+  display: grid;
+  gap: calc(var(--base-gap) * 1.5);
+  justify-items: center;
+
+  h1 {
+    font-size: calc(var(--base-fs) * 10);
+    text-align: center;
+    text-shadow: 3px 3px 3px hwb(var(--shadow) / 0.4);
+  }
+}
