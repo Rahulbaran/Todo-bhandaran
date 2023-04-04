@@ -14,8 +14,8 @@ export default function Header() {
           title="change color mode"
           onClick={themeCnxt.toggleTheme}
         >
-          <span className="material-icons">light_mode</span>
           <span className="material-icons">dark_mode</span>
+          <span className="material-icons">light_mode</span>
         </button>
       </div>
 
